@@ -1,0 +1,709 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --color1: #f9c265;
+  --color2: #fdf6e4;
+  --color3: #fcf3ec;
+  --color4: #202020;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:link,
+a:visited {
+  color: black;
+  transition: transform 0.5s;
+}
+
+a:active,
+a:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+a:hover {
+  transform: scale(1.2, 1.2);
+}
+
+header {
+  background-color: var(--color1);
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+header nav .nav-left ul li {
+  display: inline-block;
+}
+
+header nav .nav-left ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+header nav .nav-center {
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-center i {
+  font-size: 25px;
+}
+
+header nav .nav-center h1 {
+  font-size: 16px;
+  align-self: flex-end;
+}
+
+header nav .nav-right ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+header nav .nav-right ul li .login {
+}
+
+header nav .nav-right ul li .signup {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+main {
+}
+
+main .hero {
+  padding-top: 70px;
+
+  background-color: var(--color1);
+}
+
+main .hero .upper-hero {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .hero .upper-hero .upper-left-hero {
+}
+
+main .hero .upper-hero .upper-left-hero h2 {
+  font-size: 35px;
+  font-weight: 700;
+  width: 50%;
+  margin-left: 150px;
+}
+
+main .hero .upper-hero .upper-left-hero h2 span {
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  background-color: black;
+  color: var(--color1);
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+
+main .hero .upper-hero .upper-right-hero {
+  width: 20%;
+  margin: 0 auto;
+}
+
+main .hero .upper-hero .upper-right-hero p {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+main .hero .upper-hero .upper-right-hero button {
+  margin-top: 20px;
+  padding: 10px 30px;
+  background-color: var(--color1);
+  border-radius: 20px;
+  font-weight: 600;
+  border-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+main .hero .upper-hero .upper-right-hero button:hover {
+  transform: scale(1.05, 1.05);
+}
+
+main .hero .image-hero {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+main .hero .image-hero image {
+  width: 100%;
+}
+
+main .hero .lower-hero {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 200px;
+}
+
+main .hero .lower-hero .numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 82px;
+  transition: transform 0.5s;
+}
+
+main .hero .lower-hero .numbers:hover {
+  transform: scale(1.2, 1.2);
+}
+
+main .hero .lower-hero .numbers h3 {
+  font-size: 27px;
+}
+
+main .hero .lower-hero .numbers p {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+
+main .hero .lower-hero .numbers:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 40%;
+  width: 3px;
+  background-color: #ebddc3;
+}
+
+main .services .upper-services {
+  background-color: var(--color2);
+  display: flex;
+  justify-content: space-around;
+  padding: 100px;
+}
+
+main .services .upper-services .upper-left-services img {
+  width: 100%;
+}
+
+main .services .upper-services .upper-right-services {
+  width: 25%;
+  line-height: 55px;
+  margin-right: 100px;
+}
+
+main .services .upper-services .upper-right-services h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+main .services .upper-services .upper-right-services h2 span {
+  color: black;
+  background-color: var(--color1);
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main .services .upper-services .upper-right-services p {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  width: 88%;
+}
+
+main .services .lower-services {
+  background-color: var(--color3);
+  padding: 100px;
+}
+
+main .services .lower-services .sub-upper-services {
+  display: flex;
+  gap: 25px;
+}
+
+main .services .lower-services .sub-upper-services .features {
+  background-color: #1d1d1d;
+  flex: 0 0 60%;
+  padding: 30px 150px 40px 30px;
+  border-radius: 15px;
+}
+
+main .services .lower-services .sub-upper-services .features h2 {
+  color: white;
+  width: 50%;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+main .services .lower-services .sub-upper-services .features h2 span {
+  color: #d1af70;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main .services .lower-services .sub-upper-services .features button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: var(--color1);
+  border-radius: 20px;
+  font-weight: 600;
+  border-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+main .services .lower-services .sub-upper-services .features button:hover {
+  transform: scale(1.05, 1.05);
+}
+
+main .services .lower-services .sub-lower-services {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+main .services .lower-services .feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 10px;
+  flex: 0 0 29%;
+  padding: 30px;
+  transition: transform 0.5s;
+}
+
+main .services .lower-services .feature:hover {
+  transform: scale(1.1, 1.1);
+}
+
+main .services .lower-services .feature img {
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+main .services .lower-services .feature h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+main .services .lower-services .feature p {
+  width: 74%;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+main .portfolio {
+  background-color: var(--color4);
+  padding: 100px;
+}
+
+main .portfolio h2 {
+  color: white;
+  justify-self: center;
+  font-weight: 550;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+main .portfolio h2 span {
+  color: var(--color1);
+  border: 1px solid var(--color1);
+  border-radius: 30px;
+  padding: 5px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+main .portfolio .courses-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 35px;
+}
+
+main .portfolio .course {
+  background-color: white;
+  padding: 15px;
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+
+main .portfolio .course:hover {
+  transform: scale(1.1, 1.1);
+}
+
+main .portfolio .course .container img {
+  width: 100%;
+}
+
+main .portfolio .course .container .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 5px;
+}
+
+main .portfolio .course .container .info .reviews {
+  display: flex;
+}
+
+main .portfolio .course .container .info .reviews i {
+  color: #d9a337;
+  margin-right: 3px;
+}
+
+main .portfolio .course .container .info .reviews p span {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 11px;
+}
+
+main .portfolio .course .container .info .duration {
+  display: flex;
+}
+
+main .portfolio .course .container .info .duration i {
+  margin-right: 3px;
+}
+
+main .portfolio .course .container .info .duration p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 11px;
+}
+
+main .portfolio .course h3 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 16px;
+  width: 80%;
+  line-height: 1.5;
+}
+
+main .portfolio .course button {
+  padding: 10px 15px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 11px;
+  transition: transform 0.5s;
+}
+
+main .portfolio .course button:hover {
+  background-color: var(--color1);
+  transform: scale(1.05, 1.05);
+}
+
+main .getting-started {
+  padding: 100px;
+}
+
+main .getting-started .starting {
+  background-color: white;
+}
+
+main .getting-started .starting .upper-getting-started {
+  display: flex;
+  margin-bottom: 80px;
+  justify-content: center;
+}
+
+main .getting-started .starting .upper-getting-started .starting-steps {
+  flex: 0 0 50%;
+}
+
+main .getting-started .starting .upper-getting-started .starting-steps h2 {
+  font-size: 50px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+main .getting-started .starting .upper-getting-started .starting-steps h2 span {
+  color: black;
+  background-color: var(--color1);
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px 10px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main .getting-started .starting .upper-getting-started .starting-steps p {
+  width: 75%;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+main .getting-started .starting .upper-getting-started .starting-steps ul {
+  list-style-type: none;
+}
+
+main .getting-started .starting .upper-getting-started .starting-steps ul li {
+  padding: 5px;
+  font-weight: 600;
+  transition: transform 0.5s;
+}
+
+main .getting-started .starting .upper-getting-started .starting-steps ul li i {
+  font-size: 13px;
+  margin-right: 7px;
+  background-color: var(--color1);
+  border-radius: 50%;
+  outline: 3px solid var(--color1);
+}
+
+main .getting-started .starting .upper-getting-started .starting-image img {
+  width: 100%;
+}
+
+main .getting-started .starting .lower-getting-started {
+  background-color: var(--color1);
+  padding: 30px;
+  padding-bottom: 0;
+  border-radius: 25px;
+  justify-self: center;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+}
+
+main .getting-started .starting .lower-getting-started .order-image {
+  flex: 0 0 45%;
+}
+
+main .getting-started .starting .lower-getting-started .order-image img {
+  width: 100%;
+}
+
+main .getting-started .starting .lower-getting-started .order-now {
+  padding-top: 50px;
+  flex: 0 0 40%;
+}
+
+main .getting-started .starting .lower-getting-started .order-now h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+main .getting-started .starting .lower-getting-started .order-now h3 span {
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main .getting-started .starting .lower-getting-started .order-now p {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+main .getting-started .starting .lower-getting-started .order-now button {
+  padding: 15px 30px;
+  color: var(--color1);
+  background-color: black;
+  border-radius: 30px;
+  font-weight: 600;
+  border-width: 1px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+main .getting-started .starting .lower-getting-started .order-now button:hover {
+  transform: scale(1.05, 1.05);
+}
+
+main .call-to-action {
+  background-color: var(--color2);
+  padding: 100px;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-top: -270px;
+  margin-bottom: -280px;
+}
+
+main .call-to-action h2 {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+main .call-to-action h2 p {
+  justify-self: center;
+}
+
+main .call-to-action h2 p span {
+  color: black;
+  background-color: var(--color1);
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px 10px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+
+main .call-to-action .methods {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  gap: 15px;
+  margin-bottom: 280px;
+}
+
+main .call-to-action .action {
+  background-color: black;
+  padding: 8px;
+  border-radius: 5px;
+  transition: transform 0.5s;
+}
+
+main .call-to-action .action:hover {
+  background-color: black;
+  padding: 8px;
+  border-radius: 5px;
+  transform: scale(1.05, 1.05);
+  cursor: pointer;
+}
+
+main .call-to-action .action a {
+  display: flex;
+  color: white;
+  align-items: center;
+  transition: none;
+  transform: none;
+}
+
+main .call-to-action .action i {
+  font-size: 15px;
+}
+
+main .call-to-action .action i.fa-google-play {
+  color: #32bfc4;
+}
+
+main .call-to-action .action .action-info {
+}
+
+main .call-to-action .action .action-info p {
+  font-size: 7px;
+}
+
+main .call-to-action .action .action-info h4 {
+  font-size: 10px;
+}
+
+footer {
+  background-color: #1d1d1d;
+  padding: 50px;
+  position: relative;
+  margin: 0 auto;
+  color: white;
+  border-radius: 30px 30px 0 0;
+  max-width: 1100px;
+  z-index: 2;
+}
+
+footer .footer-info {
+  display: flex;
+  gap: 60px;
+}
+
+footer .footer-info .monac .logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+footer .footer-info .monac .logo i {
+  font-size: 25px;
+  color: var(--color1);
+}
+
+footer .footer-info .monac .logo h1 {
+  font-size: 16px;
+  align-self: flex-end;
+}
+
+footer .footer-info .monac p {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  width: 50%;
+}
+
+footer .footer-info .more {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer .footer-info .more h4 {
+  font-size: 14px;
+}
+
+footer .footer-info .more ul {
+  list-style-type: none;
+}
+
+footer .footer-info .more a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  line-height: 2.5;
+}
+
+footer .footer-legal {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 11px;
+}
+
+footer .footer-legal .terms a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 11px;
+}
