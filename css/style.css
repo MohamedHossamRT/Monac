@@ -12,6 +12,11 @@
   --color4: #202020;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -78,17 +83,11 @@ header nav .nav-right ul li {
   font-weight: 600;
 }
 
-header nav .nav-right ul li .login {
-}
-
 header nav .nav-right ul li .signup {
   background-color: black;
   color: white;
   border-radius: 20px;
   padding: 10px 15px;
-}
-
-main {
 }
 
 main .hero {
@@ -100,9 +99,6 @@ main .hero {
 main .hero .upper-hero {
   display: flex;
   justify-content: space-around;
-}
-
-main .hero .upper-hero .upper-left-hero {
 }
 
 main .hero .upper-hero .upper-left-hero h2 {
@@ -153,7 +149,8 @@ main .hero .image-hero {
   justify-content: center;
 }
 
-main .hero .image-hero image {
+main .hero .image-hero img {
+  max-width: 700px;
   width: 100%;
 }
 
@@ -623,9 +620,6 @@ main .call-to-action .action i.fa-google-play {
   color: #32bfc4;
 }
 
-main .call-to-action .action .action-info {
-}
-
 main .call-to-action .action .action-info p {
   font-size: 7px;
 }
@@ -706,4 +700,225 @@ footer .footer-legal {
 footer .footer-legal .terms a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 11px;
+}
+
+@media (max-width: 1200px) {
+  main .hero .upper-hero .upper-left-hero h2 {
+    margin-left: 50px;
+  }
+
+  main .hero .lower-hero {
+    padding: 60px 100px;
+  }
+
+  main .services .upper-services {
+    padding: 50px;
+  }
+
+  main .services .upper-services .upper-right-services {
+    margin-right: 50px;
+  }
+
+  main .services .lower-services {
+    padding: 50px;
+  }
+
+  main .services .lower-services .sub-upper-services .features {
+    padding: 30px 50px 40px 30px;
+  }
+
+  main .portfolio {
+    padding: 50px;
+  }
+
+  main .getting-started {
+    padding: 50px;
+  }
+
+  footer {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  main .hero .upper-hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  main .hero .upper-hero .upper-left-hero h2 {
+    width: 80%;
+    margin-left: 0;
+  }
+
+  main .hero .upper-hero .upper-right-hero {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  main .hero .lower-hero {
+    flex-wrap: wrap;
+    padding: 30px;
+  }
+
+  main .hero .lower-hero .numbers {
+    padding: 20px;
+  }
+
+  main .hero .lower-hero .numbers:not(:last-child)::after {
+    display: none;
+  }
+
+  main .services .upper-services {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  main .services .upper-services .upper-right-services {
+    width: 80%;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  main .services .lower-services .sub-upper-services,
+  main .services .lower-services .sub-lower-services {
+    flex-direction: column;
+  }
+
+  main .services .lower-services .feature {
+    flex: 0 0 100%;
+  }
+
+  main .portfolio .courses-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  main .portfolio .courses-container .course {
+    width: 80%;
+  }
+
+  main .getting-started .starting .upper-getting-started {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main .getting-started .starting .upper-getting-started .starting-steps {
+    width: 80%;
+  }
+
+  main .getting-started .starting .lower-getting-started {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  main .getting-started .starting .lower-getting-started .order-now {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  main .call-to-action .methods {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .call-to-action .methods .action {
+    width: 80%;
+  }
+
+  footer .footer-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  footer .footer-info .monac,
+  footer .footer-info .more {
+    width: 80%;
+    text-align: center;
+    justify-items: center;
+  }
+
+  footer .footer-legal {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  main .hero .upper-hero .upper-left-hero h2 {
+    font-size: 30px;
+  }
+
+  main .services .upper-services .upper-right-services h2 {
+    font-size: 35px;
+  }
+
+  main .services .lower-services .sub-upper-services .features h2 {
+    font-size: 25px;
+  }
+
+  main .portfolio h2 {
+    font-size: 35px;
+  }
+
+  main .getting-started .starting .upper-getting-started .starting-steps h2 {
+    font-size: 35px;
+  }
+
+  main .getting-started .starting .lower-getting-started .order-now h3 {
+    font-size: 35px;
+  }
+
+  main .call-to-action h2 {
+    font-size: 35px;
+  }
+
+  footer .footer-info .monac,
+  footer .footer-info .more {
+    justify-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  main .hero .upper-hero .upper-left-hero h2 {
+    font-size: 25px;
+  }
+
+  main .services .upper-services .upper-right-services h2 {
+    font-size: 30px;
+  }
+
+  main .services .lower-services .sub-upper-services .features h2 {
+    font-size: 20px;
+  }
+
+  main .portfolio h2 {
+    font-size: 30px;
+  }
+
+  main .getting-started .starting .upper-getting-started .starting-steps h2 {
+    font-size: 30px;
+  }
+
+  main .getting-started .starting .lower-getting-started .order-now h3 {
+    font-size: 30px;
+  }
+
+  main .call-to-action h2 {
+    font-size: 30px;
+  }
+
+  main .call-to-action .methods .action {
+    width: 90%;
+  }
+
+  footer .footer-info .monac,
+  footer .footer-info .more {
+    width: 90%;
+    justify-items: center;
+  }
 }
